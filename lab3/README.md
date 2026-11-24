@@ -1,4 +1,6 @@
-# APKS_Lab3 — SPI Master на Verilog
+# Лабораторна робота №3 — SPI Master на Verilog
+
+Папка `lab3/` репозиторію [408CSAD12](../README.md) (один репозиторій для всіх лабораторних з АПКС).
 
 Лабораторна робота №3 з дисципліни «Автоматизоване проєктування комп’ютерних систем»:
 **«Розробка та верифікація послідовних комунікаційних протоколів на ПЛІС»**.
@@ -33,8 +35,10 @@ SPI Master з окремими передавачем (Tx) і приймачем
 ## Запуск
 
 Потрібен [OSS CAD Suite](https://github.com/YosysHQ/oss-cad-suite-build) (iverilog, yosys, nextpnr) і Python 3 з matplotlib.
+Команди виконуються з папки `lab3/`.
 
 ```bash
+cd lab3
 bash sim/run_sim.sh            # симуляція: SCLK 1 МГц і 12.5 МГц -> TEST PASSED
 bash sim/mutation_test.sh      # тестбенч виявляє навмисні помилки в RTL
 python sim/plot_waves.py build/sim/tb_1000000.vcd build/sim/tb_12500000.vcd docs/img
